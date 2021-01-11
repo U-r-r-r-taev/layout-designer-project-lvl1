@@ -78,6 +78,18 @@
     font-family: "Neucha", sans-serif;
     line-height: 1.2em;
   }
+
+  h5,
+  .template-fz-paragraph-14 {
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Neucha", sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.2px;
+    width: 100%;
+    height: 26px;
+  }
   
   /* end /** headers h1 h2 h3 h4 h5 h6 **/
   /* _______________________________________________________ */
@@ -125,6 +137,8 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  
   
   .half-block {
     flex-grow: 1;
@@ -148,12 +162,23 @@
   .z-index-100 {
     z-index: 100;
   }
+
+  .z-index-50 {
+    z-index: 50;
+  }
   
   /* end z index */
   /* __________________________________ */
   /* paddings */
   .pt-0 {
     padding-top: 0;
+  }
+
+  .pt-100 {
+    padding-top: 100px;
+  }
+  .pt-100 {
+    padding-bottom: 100px;
   }
   
   .pt-200 {
@@ -206,6 +231,11 @@
   
   .mt-190 {
     margin-top: 190px;
+  }
+
+  .mt-300 {
+    margin-top: 300px;
+
   }
   
   /* end margins */
@@ -285,6 +315,7 @@
     top: 35px;
     left: 300px;
     height: 525px;
+   
   }
   
   .header-button {
@@ -309,3 +340,29 @@
   }
   
   /* end header */
+
+
+  /* section */
+  #ikea-effect {
+    position: relative;
+    overflow: hidden;  
+  }
+
+  #ikea-effect::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+  }
+
+  .section-image {
+      position: absolute;
+      top: 35px;
+      left: 100px;
+      height: 525px;
+    }
+  
